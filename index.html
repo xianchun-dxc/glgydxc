@@ -1,5 +1,75 @@
-<html>
+<html manifest="offlineCache.manifest">
+<head>
+<title>PS4 6.72越狱</title>
+<meta charset="utf-8"/>
+<style>
+.button {
+  background-color: #003263;  
+  border-radius: 5px;
+  color: white;
+  padding: .5em;
+  text-decoration: none;
+  height:100%;
+  display:inline-table;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #007bff;
+  color: White;
+}
+</style></head>
 <body>
-<h1>Hello world!</h1>
+<script>
+  window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="页面缓存开始!!"};
+  window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML="缓存状态: "+(Math.round(100*(a.loaded/a.total)))+"% 已完成"};
+  window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="页面缓存完成!!";setTimeout(function(){document.getElementById("progress").innerHTML="关闭网络并重新打开浏览器运行破解!!"; }, 1500);};
+  window.applicationCache.onnoupdate=function(){setTimeout(function(){load_JB(); }, 1500);};
+  window.applicationCache.onerror=function(){setTimeout(function(){load_JB(); }, 1500);};
+</script>
+<script src="common/functions.js"></script>
+<script>function print(){}</script>
+<script src="common/exploit.js"></script>
+<h1 id="progress" style="margin-top:30px;text-align:center;">PS4 6.72越狱</h1><hr>
+<div>
+<table align="center" style="width:600px;margin-top:30px;">
+<tr>
+<td align="center" colspan="2"><a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('mirahen'); return false" style="width:28%">MIRA + HEN</a>
+<a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('miranohb'); return false" style="width:28%">MIRA No HB</a>
+<a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('miraunofficial'); return false" style="width:28%">MIRA UnOfficial</a></td>
+</tr>
+<tr><td><br/></td></tr>
+<tr>
+<td colspan="2" align="center"><h1>更多游戏资源请访问<br>GameKegs.com游戏大桶<br>PS4 6.72越狱破解,8月8日更新<br>Payloads</h1></td>
+</tr>
+<tr>
+<td align="center" colspan="2"><a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('app2usb'); return false" style="width:43%">App2USB</a>
+<a href="ps4_gamekegs_default.html#" class="button" onclick="load_netcat(); return false" style="width:43%">Bin Loader</a></td>
+</tr><tr><td><br/></td></tr>
+<tr>
+<td align="center" colspan="2"><a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('disableupdates'); return false" style="width:43%">Disable Updates</a>
+<a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('enableupdates'); return false" style="width:43%">Enable Updates</a></td>
+</tr><tr><td><br/></td></tr>
+<tr>
+<td align="center" colspan="2"><a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('dumper'); return false" style="width:43%">Dumper</a>
+<a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('kerneldumper'); return false" style="width:43%">Kernel Dumper</a></td>
+</tr><tr><td><br/></td></tr>
+<tr>
+<tr>
+<td align="center" colspan="2"><a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('restore'); return false" style="width:43%">Restore</a>
+<a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('historyblocker'); return false" style="width:43%">History Blocker</a></td>
+</tr><tr><td><br/></td></tr>
+<tr>
+<td align="center" colspan="2"><a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('ftp'); return false" style="width:43%">FTP</a>
+<a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('backup'); return false" style="width:43%">BackUp</a></td>
+</tr><tr><td><br/></td></tr>
+<tr>
+<td align="center" colspan="2"><a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('todex'); return false" style="width:43%">To-DEX</a>
+<a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('webrte'); return false" style="width:43%">WebRTE</a></td>
+</tr><tr><td><br/></td></tr>
+<tr>
+<td align="center" colspan="2"><a href="ps4_gamekegs_default.html#" class="button" onclick="load_payload('linuxloader'); return false" style="width:90%">Linux Loader</a></td>
+</tr>
+</table></div>
 </body>
 </html>

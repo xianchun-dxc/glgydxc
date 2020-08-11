@@ -1,0 +1,15 @@
+﻿CACHE MANIFEST
+# v1.0
+# 11/08/2020-22:53:57.44
+
+index.html
+commom/exploit.js
+common/function.js
+payloads/app2usb.js
+payloads/c-code.js
+payloads/disableupdates.js
+payloads/enableupdates.js
+payloads/mira.js
+payloads/mirahen.js
+payloads/miranohb.js
+payloads/miraunofficial.js
